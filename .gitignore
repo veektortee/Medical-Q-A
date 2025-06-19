@@ -1,0 +1,11 @@
+.env
+.streamlit/secrets.toml
+**/medquad.txt
+
+# Virtual environments
+*.venv
+
+# Python cache files
+**/__pycache__/
+**/*.pyc
+**/*.pyo
