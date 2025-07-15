@@ -27,23 +27,6 @@ MediQuery is an intelligent medical question-answering system that leverages Ret
 
 ---
 
-## 🖥️ How to Run
-
-1. **Install dependencies**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-2. **Run Streamlit App**
-    ```bash
-    streamlit run app.py
-    ```
-
-3. **Ask health-related questions**  
-   The model will respond based on real medical literature and retrieved context.
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -64,6 +47,36 @@ project/
 
 ---
 
+## 🖥️ How to Run
+
+1. **Install dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2. **Run Streamlit App**
+    ```bash
+    streamlit run app.py
+    ```
+    Visit `http://localhost:8501` in your browser, type a question, get an answer!
+
+3. **Ask health-related questions**  
+   The model will respond based on real medical literature and retrieved context.
+
+---
+
+## ⚙️ Tech Stack
+- ✅ LangChain — RAG orchestration
+
+- ✅ SentenceTransformers — Embeddings
+
+- ✅ FAISS — Vector similarity search
+
+- ✅ OpenAI API — LLM completions
+
+- ✅ Streamlit — User-friendly UI
+
+
 ## 🛑 Disclaimer
 
-This system is **not a substitute for professional medical advice**. Answers are based on context retrieved from medical literature and are intended
+MediQuery is not a substitute for professional medical advice. All answers are generated from medical literature and are intended for informational purposes only. Always consult a qualified healthcare provider for any medical concerns.
