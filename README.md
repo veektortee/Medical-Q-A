@@ -21,9 +21,9 @@ MediQuery is an intelligent medical question-answering system that leverages Ret
 
 - 🔎 Context-aware answers
 - ⚡ Fast FAISS-powered retrieval
-- 🧠 Backed by GPT-4o
+- 🧠 Custom prompt template for safe generation
 - 📁 Custom-trained on embedded MedQuAD data
-- 🌐 Deployed via Streamlit for easy demo and interaction
+- 🌐 Runs locally: CLI & Streamlit web app
 
 ---
 
@@ -48,13 +48,18 @@ MediQuery is an intelligent medical question-answering system that leverages Ret
 
 ```
 project/
-├── backend/
-│   └── medical_qa.py       # Core RAG logic and model invocation
+├── retriever/
+│   ├── medical_qa.py   # Main RAG pipeline using LangChain, FAISS, OpenAI
+│   ├── answer.py        # Simple CLI: test questions locally
+├── generator/
+│   └── extract_medquad.py # Extract MedQuAD Q&A and generate embeddings
+├── app/
+│   └── app.py          # Streamlit frontend for easy user interaction
 ├── data/
-│   ├── metadata.pkl        # Embedded MedQuAD metadata
-│   └── faiss_index         # FAISS vector store
-└── streamlit_app/
-    └── app.py              # Frontend UI via Streamlit
+│   ├── docs/medquad.txt  # Raw MedQuAD Q&A
+│   ├── faiss_index       # FAISS index file
+│   └── metadata.pkl      # Stored chunks & metadata
+
 ```
 
 ---
