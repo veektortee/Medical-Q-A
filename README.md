@@ -58,19 +58,19 @@ project/
     ```bash
     streamlit run app.py
     ```
-    Visit `http://localhost:8501` in your browser, type a question, get an answer!
+    ➡️ Visit `http://localhost:8501` in your browser, type a question, get an answer!
 
 3. Run CLI test
    ```bash
    python retriever/answer.py
    ```
-   Try simple console-based queries to validate retrieval & generation
+   ➡️ Try simple console-based queries to validate retrieval & generation
 
 4. Regenerate embeddings (if needed)
    ```bash
    python generator/embed_documents.py
    ```
-   Extract Q&A pairs and rebuild the FAISS index.
+   ➡️ Extract Q&A pairs and rebuild the FAISS index.
 
 6. **Ask health-related questions**  
    The model will respond based on real medical literature and retrieved context.
