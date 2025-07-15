@@ -47,6 +47,15 @@ project/
 
 ---
 
+## Live Demo
+
+👉 **Try MediQuery right now:**
+[**Launch Live Demo**](https://veektortee-medical-q-a-appapp-27d2ej.streamlit.app/)
+
+Ask real medical questions and see how the Retrieval-Augmented Generation system works in real time.
+
+> ⚠️ **Reminder:** This is not a substitute for professional medical advice.
+
 ## 🖥️ How to Run
 
 1. **Install dependencies**
@@ -60,13 +69,13 @@ project/
     ```
     ➡️ Visit `http://localhost:8501` in your browser, type a question, get an answer!
 
-3. Run CLI test
+3. **Run CLI test**
    ```bash
    python retriever/answer.py
    ```
    ➡️ Try simple console-based queries to validate retrieval & generation
 
-4. Regenerate embeddings (if needed)
+4. **Regenerate embeddings (if needed)**
    ```bash
    python generator/embed_documents.py
    ```
